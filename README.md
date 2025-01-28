@@ -4,10 +4,6 @@
 ![Static Badge](https://img.shields.io/badge/languages-verilog%2C_bash%2C_TCL-blue)
 
 > 2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD and NASSCOM
-![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
-
-
-![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
 
 <details>  
 
@@ -26,7 +22,6 @@ Theory
 * What we usually consider to be a **chip** is the tiny black box circled on the board. However, that is just a **package** for the actual **integrated circuit (IC)**, or chip, inside. If we zoom into the package as seen in image 2, we get the IC in the center connected to the pins on the boundary by wires.
 
 ![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
-<image src = https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899></image>
 
 ![image](https://github.com/user-attachments/assets/d205568a-d825-4035-98dc-01b19b7e3482)
 
