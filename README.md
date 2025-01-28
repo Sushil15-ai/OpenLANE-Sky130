@@ -21,6 +21,9 @@ Theory
 
 * What we usually consider to be a **chip** is the tiny black box circled on the board. However, that is just a **package** for the actual **integrated circuit (IC)**, or chip, inside. If we zoom into the package as seen in image 2, we get the IC in the center connected to the pins on the boundary by wires.
 
+
+![image](https://github.com/user-attachments/assets/657304ca-bf57-4a33-a4bd-4693530d4b16)
+
 ![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
 
 ![image](https://github.com/user-attachments/assets/d205568a-d825-4035-98dc-01b19b7e3482)
