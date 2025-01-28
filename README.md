@@ -21,12 +21,9 @@ Theory
 
 * What we usually consider to be a **chip** is the tiny black box circled on the board. However, that is just a **package** for the actual **integrated circuit (IC)**, or chip, inside. If we zoom into the package as seen in image 2, we get the IC in the center connected to the pins on the boundary by wires.
 
+![image](https://github.com/user-attachments/assets/53d6412f-dc24-4f84-bf19-6ca40646bdaa)
 
-![image](https://github.com/user-attachments/assets/657304ca-bf57-4a33-a4bd-4693530d4b16)
-
-![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
-
-![image](https://github.com/user-attachments/assets/d205568a-d825-4035-98dc-01b19b7e3482)
+![image](https://github.com/user-attachments/assets/2d915553-162e-4969-8171-c701a57ebfb8)
 
 #### Die, Pads, and Core
 
@@ -34,7 +31,7 @@ Theory
 * **Core** is the area where the digital logic circuits are placed.
 * **Die** refers to the size of the silicon chip itself, excluding the surrounding packaging material.
 
-![image](https://github.com/user-attachments/assets/3ed62cd7-5ee8-41da-bbd1-f45354494a83)
+![image](https://github.com/user-attachments/assets/5d7282fa-6634-42ec-940f-b2c0a4e424b9)
 
 #### C Program to Hardware
 
@@ -43,11 +40,11 @@ Theory
 * The HDL code is then synthesized into a netlist, which is a low-level representation of the circuit's connectivity. 
 * Finally, the netlist is placed and routed on the chip layout using Electronic Design Automation (EDA) tools.
 
-![image](https://github.com/user-attachments/assets/b1d5077e-af87-445f-858d-eda2dfe0e4ca)
+![image](https://github.com/user-attachments/assets/59f2a2d8-1f66-4997-a7a1-851a9881dd3c)
 
-![image](https://github.com/user-attachments/assets/8fa7910e-9f64-4c50-b0e2-1f6aa5d3e535)
+![image](https://github.com/user-attachments/assets/49e26767-6a67-40be-bd95-528c9eade4d4)
 
-![image](https://github.com/user-attachments/assets/ae3569fe-ed0c-42e1-bd4b-3782a755d17b)
+![image](https://github.com/user-attachments/assets/28e34cf4-0b72-4cf4-8103-745b78b835f6)
 
 ### Section 2 - SoC design and OpenLANE
 
@@ -56,30 +53,29 @@ Theory
 * Electron Design Automation tools.
 * **PDK** Data
 
-![image](https://github.com/user-attachments/assets/4b6c6cd7-45ad-4c47-a67c-98717669cd40)
+![image](https://github.com/user-attachments/assets/4e3898f3-abbe-4700-9cf7-4539fca1877d)
 
 #### Process Design Kit (PDK)
 
 * A Process Design Kit (PDK) is a collection of files used to model the specific fabrication process for the EDA tools used to design an integrated circuit (IC). The PDK contains information about the available logic cells, routing rules and device parameters for a particular chip fabrication process.
 
-
-![image](https://github.com/user-attachments/assets/0e605a89-6b0d-43c5-b453-119f8a0eb4e0)
+![image](https://github.com/user-attachments/assets/a33b6ed0-2544-4d52-86ea-490c3e1d09cb)
 
 #### RTL to GDSII Flow
 * **Synthesis:** This stage converts the HDL code (e.g., Verilog) into a gate-level netlist. The netlist represents the circuit's functionality using basic logic gates.
 
-![image](https://github.com/user-attachments/assets/0c936d2c-1744-4c30-8c41-33408bbfc768)
+![image](https://github.com/user-attachments/assets/edd36bad-aade-4703-aaa4-bb7537adbc59)
 
-* Floor and Power Planning - In this stage, the chip layout is planned. The die area is divided into sections for different functional blocks and I/O pads. The power supply network is also designed to ensure proper power distribution throughout the chip.
+* **Floor and Power Planning:** In this stage, the chip layout is planned. The die area is divided into sections for different functional blocks and I/O pads. The power supply network is also designed to ensure proper power distribution throughout the chip.
  
 * **Placement:** This stage involves positioning the logic cells from the netlist onto the chip layout. The goal is to find optimal locations for the cells considering factors like timing and area constraints. There are two main placement steps:
 
     * **Global placement:** This provides an initial placement for all cells, aiming for optimal positions but not necessarily following all layout rules. The placement in this step may not always be legal.
     * **Detailed placement:** This refines the initial placement to ensure all cells adhere to the design rules.
 
-![image](https://github.com/user-attachments/assets/e239f1de-743b-4944-8f4e-85a1622e4003)
+![image](https://github.com/user-attachments/assets/d7eba5be-7b87-4aef-a5ca-50e0b81ae6c8)
 
-![image](https://github.com/user-attachments/assets/875a17e2-da54-4f09-a622-91ad19ba684d)
+![image](https://github.com/user-attachments/assets/9fe021aa-a7c2-42d2-bbdb-a10760e62990)
 
 * **Clock Tree Synthesis (CTS):** A clock tree is a network of buffers and wires that distributes the clock signal to all sequential elements (flip-flops) in the design. CTS aims to minimize clock skew, which is the variation in arrival time of the clock signal at different flip-flops.
 
@@ -94,7 +90,7 @@ Theory
     * **Layout vs Schematic (LVS):** This compares the final layout with the original gate-level netlist to ensure they are equivalent.
     * **Static Timing Analysis (STA):** This analyzes the timing delays in the design to ensure all signals meet the timing constraints and the circuit operates at the required frequency.
 
-![image](https://github.com/user-attachments/assets/79c6679e-307d-43d4-8d86-875601805404)
+![image](https://github.com/user-attachments/assets/feb256ed-4dfc-4569-9fc5-f883e1552900)
 
 * **Introduction to OpenLANE and StriVe**
 
@@ -103,11 +99,11 @@ Theory
 
 Versions:
 
-![image](https://github.com/user-attachments/assets/f4b80642-c7cc-4daa-8306-69bf3c7b7b4c)
+![image](https://github.com/user-attachments/assets/2f3d96a3-2617-4adf-a3d6-46fe1ba06da9)
 
 #### OpenLANE ASIC Design Flow:
 
-![image](https://github.com/user-attachments/assets/8d4c71b0-cf4d-4733-b1e7-dc6fc1ca1c08)
+![image](https://github.com/user-attachments/assets/39b1dfd1-20c0-435f-b80e-d04265f0689f)
 
 </details>
 
