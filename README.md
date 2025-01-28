@@ -116,30 +116,30 @@ Theory
 
 #### Defining Width and Height of the Chip
 
-![image](https://github.com/user-attachments/assets/9da17abc-dcb6-4483-b39b-0000e497c3cf)
+![image](https://github.com/user-attachments/assets/aa53f632-8a83-447c-bd18-48fc034137e8)
 
 * Let us begin with a _netlist_.
 * **Netlist:** A netlist is a list of all the components (like flip-flops, gates) and their connections in a circuit.
 
-![image](https://github.com/user-attachments/assets/878bfc10-b7ce-4413-a482-cfae027308e2)
+![image](https://github.com/user-attachments/assets/3f96a19c-3ccf-47ad-bff9-0189384c7941)
 
 * FF-Flip Flops
 * A1, O1-AND Gate and OR Gate
 * **Gates:** We assign a size (width and height) to each gate in the netlist, creating a unique box for each one.
 
-![image](https://github.com/user-attachments/assets/8f4da4ec-c6dd-45a2-80fe-4049130f0d30)
+![image](https://github.com/user-attachments/assets/ba6b1661-176e-4dc8-8c66-c15ddc05ddb5)
 
 * **Cell Areas:** We estimate the size of each cell in the netlist and calculate its area.
 
-![image](https://github.com/user-attachments/assets/bbd15cd5-d91d-4cc3-9cd5-38ffe2b3030b)
+![image](https://github.com/user-attachments/assets/b098e3c6-5679-4dc1-95d2-5369b10fe569)
 
-![image](https://github.com/user-attachments/assets/a3e52aea-4646-4283-bd05-b96929f47915)
+![image](https://github.com/user-attachments/assets/a9287ce7-e226-4893-95b9-1f0bdc27ca02)
 
 * **Core Placement:** We arrange all the logic cells (gates, flip-flops) inside the central area called core.
 
-![image](https://github.com/user-attachments/assets/2811b693-b9af-4cb1-968e-1dffabdbc891)
+![image](https://github.com/user-attachments/assets/7c95b04f-4892-436e-993e-79026e240a65)
 
-![image](https://github.com/user-attachments/assets/a19c7cfe-f198-439b-a853-f7a8cfd16a2f)
+![image](https://github.com/user-attachments/assets/a4197965-a4ce-4665-ab1f-c82f8c8c304c)
 
 * **Utilization Factor (UF):** This measures how efficiently the core area is used by the logic cells. UF is calculated as the area occupied by the netlist divided by the total core area. In real chips, UF is typically around 0.5-0.6.
 * UF = Ar. occupied by netlist/total area of core.
@@ -150,19 +150,19 @@ Theory
 * Preplaced cells are groups of predefined logic gates that are treated as a single unit.
 * To create a preplaced cell, we first partition or divide the netlist into functional blocks or parts. We then create boxes around each part.
 
-![image](https://github.com/user-attachments/assets/bc8e5ab9-4292-4d08-b487-04729a10f2b4)
+![image](https://github.com/user-attachments/assets/c51824ba-67a8-49ed-96c2-cf8ca51bab68)
 
 * Then we extend the input and output io pins such that they are jutting out of the box.
 
-![image](https://github.com/user-attachments/assets/fee27d62-090c-4fb4-bd5b-77c1f69c78d4)
+![image](https://github.com/user-attachments/assets/8d59cb64-34df-431f-bf25-f0374b832599)
 
 * **Blackboxing:** We hide the internal details of each block by treating it as a black box with a specific number of input and output pins.
 
-![image](https://github.com/user-attachments/assets/456a9cc5-6051-4ff7-aff4-674b1e9c08b0)
+![image](https://github.com/user-attachments/assets/15d24e48-52b2-4ee3-861e-01bfdd482c76)
 
 * After that, we separate the 2 boxes, each with their own inputs and outputs. Each peice or IP can be reused individually anywhere else in the circuit.
 
-![image](https://github.com/user-attachments/assets/3e35c0de-b7c7-4c88-96cf-870e56260ac5)
+![image](https://github.com/user-attachments/assets/65e6a9c4-fc5f-493d-98c5-52ea84a03452)
 
 * The arrangement of these IP's in the chip is known as floorplanning. These blocks have user defined locations and are placed before the automated placement and routing phase. Hence they are known as preplaced cells.
 
@@ -170,27 +170,27 @@ Theory
 
 * **Preplaced Cell Locations:** Input pins are typically placed on one side of the chip (left or bottom), and output pins are placed on the opposite side (right or top). Preplaced cells are positioned closer to the input side for better connectivity.
 
-![image](https://github.com/user-attachments/assets/88f4e2cf-154f-4e5c-b2d5-ffb05375ddbd)
+![image](https://github.com/user-attachments/assets/133a020b-ae42-40f2-b4a6-03bfe1062574)
 
 #### Decoupling Capacitors
 
 * Real-world (Practical) wires have resistance, which can reduce the voltage difference (voltage drop) between different parts of the circuit.
 
-![image](https://github.com/user-attachments/assets/55d74ea2-6dbc-45be-9ba7-640665608993)
+![image](https://github.com/user-attachments/assets/2f5f89c5-73ce-4872-aa5f-bbe2f0129a9b)
 
 * This causes the voltage difference applied between the IP's to reduce.
 * If this reduction is high, then the voltage will not be enough to trigger a logic 1 and will lie in the undefined region.
 
-![image](https://github.com/user-attachments/assets/ba64b8ed-757c-4a96-982b-484c38908314)
+![image](https://github.com/user-attachments/assets/0dcf107f-67e1-4625-85ec-84d7f6f30fd8)
 
 * So to ensure that the piece of circut always has enough of a voltage drop, we use a decoupling capacitor.
 * **Decoupling capacitors** are used to maintain a stable voltage supply for the circuit. They act as tiny batteries that can quickly release stored energy to compensate for voltage fluctuations.
 
-![image](https://github.com/user-attachments/assets/26033d29-02d5-4a69-9b05-eac487368ba6)
+![image](https://github.com/user-attachments/assets/b2a6fbc0-fc31-41d2-b18f-2e3cc35fcadb)
 
 * Decoupling capacitors are placed near pre-placed cells throughout the core area of the chip.
 
-![image](https://github.com/user-attachments/assets/90442a41-de68-43e0-99f1-ab762705fbe0)
+![image](https://github.com/user-attachments/assets/93f22b9c-9b7f-4f76-8c42-9e5e18990d05)
 
 #### Power Planning
 
@@ -199,19 +199,19 @@ Theory
 * The above problems are caused by an overloaded power line/ground line. This can be fixed by having multiple power and ground lines throughout the chip.
 (The below image is representing a 16-bit bus when set as input for an inverter)
 
-![image](https://github.com/user-attachments/assets/0e063592-1a59-4981-8473-8c986f3c913c)
+![image](https://github.com/user-attachments/assets/6c51746e-1f4e-40d8-bc12-abb8f53d8a9b)
 
-![image](https://github.com/user-attachments/assets/d0e9736d-27cb-4d99-a542-2f4730df86e0)
+![image](https://github.com/user-attachments/assets/93d99c70-2bb4-476e-8b3b-76a1bd3ade9f)
 
-![image](https://github.com/user-attachments/assets/bb9bfe6c-a732-4df0-bf14-f121c4df0a61)
+![image](https://github.com/user-attachments/assets/aec37dcc-85cf-4204-b0ef-1bf010c0ae51)
 
 (Power is coming from a single source)
 
-![image](https://github.com/user-attachments/assets/2f6c18c1-702a-48f0-b947-ccce9bf38b4a)
+![image](https://github.com/user-attachments/assets/6b60e995-83d0-438e-b377-6b5e061fe6c7)
 
 (Power is coming from multiple sources. In this system, the power line's and ground line's are arranged in the form of a mesh)
 
-![image](https://github.com/user-attachments/assets/0f2fb3d0-d276-451e-ba04-d01dd81cb2bb)
+![image](https://github.com/user-attachments/assets/0939b3c0-109e-40e5-b091-6857d1830c9d)
 
 #### Pin Placement
 
@@ -220,13 +220,14 @@ Theory
 * Clock pins (input and output) are placed directly opposite each other to minimize resistance.
 * Pre-placed cells are placed close together whenever possible to reduce the number of decoupling capacitors needed.
 
-![image](https://github.com/user-attachments/assets/26379b57-883c-4344-9bfa-4ec735c0b480)
+![image](https://github.com/user-attachments/assets/b4ba35f1-e906-461b-b29f-affc1c4101a3)
 
 #### Logical Cell Placement and Blockage
 
 * The space between the core and the die is filled with special blockages. These blockages reserve the area for pin placements and prevent the automated placement and routing tool from placing cells there.
 
-![image](https://github.com/user-attachments/assets/c665ca47-10ad-4b38-b4e9-25c1fb800744)
+![image](https://github.com/user-attachments/assets/d0f00886-808c-4d11-aeb6-8eed0b778539)
+
 </details>
 
 ### Section - 2: Library Binding and Placement
@@ -239,11 +240,11 @@ Theory
 * A **netlist** is a list of all the components (like flip-flops, gates) and their connections in a circuit. 
 * Below is a netlist.
 
-![image](https://github.com/user-attachments/assets/b65ad27e-6a11-4d7f-9fb5-b53b8f2fe265)
+![image](https://github.com/user-attachments/assets/2a6b9bf3-863a-43d6-9bd2-59d7900891b7)
 
 * We take all the cells in the netlist and place them in a shelf known as the **library**.
 
-![image](https://github.com/user-attachments/assets/7d35f2dc-f855-43a3-9e3a-a95d110b1ca6)
+![image](https://github.com/user-attachments/assets/9763eb63-1245-422c-83b9-bdcb94cd10d1)
 
 * A **library** contains detailed information about each cell, including:
 
@@ -253,7 +254,7 @@ Theory
     * Threshold voltage (minimum voltage required for the cell to switch states)
     * Below is a picture of libraries with same cells but different properties.
 
-![image](https://github.com/user-attachments/assets/d2fc8881-16ba-450e-bc36-35b480f2cc4b)
+![image](https://github.com/user-attachments/assets/8ba23fb2-e97d-45a6-86f0-900a7a9ac8a3)
 
 #### Placement
 
@@ -261,10 +262,11 @@ Theory
     1. **Pre-placed cell placement:**  Placing specially designated cells at predefined locations.
     2. **Standard cell placement:**  Placing the remaining cells based on their connectivity to pins and other cells. Cells are positioned closer to the pins they connect with to minimize the wirelength. 
     3. **Repeater insertion:** If the distance between a cell and its connected pin is too large, buffers or repeaters are inserted to ensure reliable signal transmission.
-    4. 
-![image](https://github.com/user-attachments/assets/fd531659-19d3-473c-879a-48c2dbf76c44)
+       
+![image](https://github.com/user-attachments/assets/985d4d79-e5d3-4f11-94da-d4d727f6715e)
 
-![image](https://github.com/user-attachments/assets/2d31f2e1-44d5-480e-897c-9c318014a717)
+![image](https://github.com/user-attachments/assets/c81cc697-8fbb-4293-89df-7458fa971426)
+
 </details>
 
 #### LAB tasks:-
@@ -272,15 +274,15 @@ Theory
 ```bash
 run_placement
 ```
-![image](https://github.com/user-attachments/assets/bad70e03-e9da-444a-8f77-6332389fcf0d)
+![image](https://github.com/user-attachments/assets/f754d6f7-1f14-4ece-a006-a056bde8d73d)
 
 * Goals for placement:
 	* Cutting down on wire length
  	* Making sure placement is legal (cells don't overlap)
 
-![image](https://github.com/user-attachments/assets/edd540ad-7e35-4e55-bb6a-5d4327502ad1)
+![image](https://github.com/user-attachments/assets/109f9a23-d6ef-4be7-b360-a69a7dec2cf8)
 
-![image](https://github.com/user-attachments/assets/077806b4-63a3-45be-9b8d-09ea0ef2f6fd)
+![image](https://github.com/user-attachments/assets/2cd2b1b0-c8a3-4a14-ae05-8a654945ebc5)
 
 2. Load generated placement def in magic tool and explore the placement.
 ```bash
@@ -289,9 +291,9 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/<date
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 
-![image](https://github.com/user-attachments/assets/b1ef5506-8500-456b-9905-9b681a3c65fd)
+![image](https://github.com/user-attachments/assets/b3f95826-4def-4cfa-9b1e-2ac5927891bd)
 
-![image](https://github.com/user-attachments/assets/618f4769-3c98-4e57-b9ca-270f39769f39)
+![image](https://github.com/user-attachments/assets/f994383c-1c11-43a3-8b4f-e774d40cbab5)
 
 ### Section 3 - Cell design and characterization flows
 <details>
@@ -299,7 +301,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 Theory
 </summary>
 	
-![image](https://github.com/user-attachments/assets/a68ebd74-f7b0-46bd-9b6d-8f72615e0746)
+![image](https://github.com/user-attachments/assets/3c88277d-24df-479f-88f6-178e379db640)
 
 </details>
 
@@ -317,18 +319,18 @@ Theory
 ```
 Transition time = Slew_high - Slew_low
 ```
-![image](https://github.com/user-attachments/assets/e6f427e8-78be-41a6-bbe4-8008dad0abc4)
+![image](https://github.com/user-attachments/assets/99ee5e9e-37d6-4e00-aae1-49e44c4ba61a)
 
 #### Delay Thresholds
 * in_fall_thr: input fall threshold
 * out_rise_thr: output rise threshold
 
-![image](https://github.com/user-attachments/assets/6a8dc9c5-a86a-4148-8f04-c008dd1170b8)
+![image](https://github.com/user-attachments/assets/cb02af64-9b7f-44d8-b511-252ddd1b0ab9)
 
 * in_rise_thr: input rise threshold 
 * out_fall_thr: output fall threshold
 
-![image](https://github.com/user-attachments/assets/8bee2460-8cec-44cd-9562-231ebdf091ab)
+![image](https://github.com/user-attachments/assets/e32cffcd-6418-44af-8322-8c0b26e628c0)
 
 ```
 Delay = out_thr - in_thr
@@ -345,78 +347,77 @@ Theory
 ### Section 1 - Labs for CMOS inverter ngspice simulations
 * We set the *env(FP_IO_MODE)* variable to 2 to make sure the cells are no longer equididstant.
 
-![image](https://github.com/user-attachments/assets/53902d59-84f7-429b-b232-294f1c4235e1)
+![image](https://github.com/user-attachments/assets/3a02b972-a57b-41e3-b013-e443c1cae51e)
 
 Pins overlap
 
-![image](https://github.com/user-attachments/assets/cc6057c9-1a26-4fa2-9b04-4b2291e0bef7)
+![image](https://github.com/user-attachments/assets/3e200a95-1d0f-43d9-9497-85205f22b458)
 
 #### Spice Simulations
 **PMOS**
 
-![image](https://github.com/user-attachments/assets/f167cd44-b576-4eaf-8e2e-49848f303fca)
+![image](https://github.com/user-attachments/assets/231e003d-92c5-4c4a-b065-c0d04bd8d162)
 
 **NMOS**
 
-![image](https://github.com/user-attachments/assets/ee07e099-8802-4587-838f-e1a3e2eeb5a5)
+![image](https://github.com/user-attachments/assets/382de0de-a60e-4422-b8bc-ca73b24a4568)
 
 **Creation of spice Deck**
 * We start from a netlist with component connectivity.
 
-![image](https://github.com/user-attachments/assets/e6a81bb6-78e1-49de-aa9b-125ccd06daf6)
+![image](https://github.com/user-attachments/assets/c9f94883-7ea1-4864-962f-e6cfa9d2bc38)
 
 * We then define the component values. This includes input and supply voltage, load values, MOSFET values.
 
-![image](https://github.com/user-attachments/assets/5f4e6fd4-d6a2-4f23-b0a6-92712fb0ec4e)
+![image](https://github.com/user-attachments/assets/8d2d17b1-14c4-4c60-b2ac-27e665b92cc6)
 
 * Then we identify *nodes*.
 * *Nodes* are 2 points lying on either side of a component.
 
-![image](https://github.com/user-attachments/assets/59f9000d-fea4-4eb6-8a22-4650f3e56303)
+![image](https://github.com/user-attachments/assets/f8d87ac8-72f8-49f7-8dc2-3d3af7ce4a48)
 
 * We name nodes and define MOSFETs by the name, followed by the nodes around it in the order drain-gate-source-substrate. Then we decribe it as NMOS or PMOS. This is folllowed by the width and length.
 
-![image](https://github.com/user-attachments/assets/9e1d034c-e129-4120-9466-731b5c110557)
-
+![image](https://github.com/user-attachments/assets/28c2da0e-71dd-4fc3-843d-bab5cd6b1304)
 
 * We describe load and Voltage sources in a similar manner.
 
-![image](https://github.com/user-attachments/assets/ac9e1c6b-2eae-4d60-8b51-8ea3100076da)
+![image](https://github.com/user-attachments/assets/075a7473-dac9-48f3-85d2-92b1ee1a3419)
 
 * We then give simulation commands.
 * The order(essentially the syntax) Vcc <from> <to> <in steps of>
 
-![image](https://github.com/user-attachments/assets/0dc42831-f8c2-4253-b312-3ef3e3ca9ed0)
+![image](https://github.com/user-attachments/assets/e13d1929-cee2-4dd6-8a31-ac7738c31a78)
 
 * We then show the location of the model file which has all the technological parameters of everything in the netlist.
 
-![image](https://github.com/user-attachments/assets/e27aabfe-7e11-41fc-ae84-89fc37d805ac)
+![image](https://github.com/user-attachments/assets/c73c6e71-83c7-4ba1-a3a9-f6facd18ad87)
 
-Different w/l(width/length) ratios of PMOS can have changes on the output waveform.
+Different w/l (width/length) ratios of PMOS can have changes on the output waveform.
 
 #### Switching Threshold
 
-![image](https://github.com/user-attachments/assets/7de4c7c4-b8f4-47ef-b9e2-30a2654dc414)
+![image](https://github.com/user-attachments/assets/d87830aa-c277-486f-bfad-b27ae7c8c8f7)
 
 * Switching Threshold is the point where V<sub>in</sub> = V<sub>out</sub>
 
-![image](https://github.com/user-attachments/assets/af97923f-1ad9-4ac6-bfd0-a24ccad3342c)
+![image](https://github.com/user-attachments/assets/0719b00b-6d26-4fcf-96d8-03473785e542)
 
 Switching threshold is the intersection of the lines.
 * In this area both the NMOS and PMOS are in the saturation region.
 
-![image](https://github.com/user-attachments/assets/342e498e-9610-4c51-841f-f612d7e86c40)
+![image](https://github.com/user-attachments/assets/56efd70a-d3cf-444b-81f8-7cfbd165fd90)
 
-if Vin = Vout means gate voltage = drain voltage, Vgs = Vds
+If Vin = Vout means gate voltage = drain voltage, Vgs = Vds
 * the currents of the NMOS and PMOS will be the same, however the directions will be different.
 * I<sub>dsP</sub> = I<sub>dsn</sub>
 * Pulse definition in spice deck: V <location based on nodes> pulse <start voltage> <end voltage> <shift(delay in start)> <rise time> <fall time> <pulse width> <width of complete cycle>
 
-![image](https://github.com/user-attachments/assets/7825843b-73ca-4958-8e71-7f7469e7ee0b)
+![image](https://github.com/user-attachments/assets/807ae7ff-cc9b-4995-a8cc-8813ebe985ea)
 
 Delay(rise or fall): Out-In(at 50% w.r.t. time)
 
-![image](https://github.com/user-attachments/assets/b4926dae-1d83-4957-bf84-735d6e3768fc)
+![image](https://github.com/user-attachments/assets/1891d848-73a1-495b-8882-5fdd498b0d71)
 </details>
 
 ### Section 2 - Inception of Layout ÃÂ CMOS fabrication process
@@ -430,82 +431,82 @@ Delay(rise or fall): Out-In(at 50% w.r.t. time)
  	* After that, deposit a layer of photoresist on top of the Silicon Nitride layer.
   	* Add a protectional layer of Mask 1 on the area where the pockets are to be made. UV light is shined on top of the mask.
 
-![image](https://github.com/user-attachments/assets/b7c7712b-f912-489f-b22c-c4295832bb8d)
+![image](https://github.com/user-attachments/assets/cc9b8631-7eb2-49d6-b854-f2a920ed42e2)
 
    * Wash out the unmasked area in developing solution.
 
-![image](https://github.com/user-attachments/assets/7a5e3b6a-e91e-40ab-bc26-3d86dc9a0c3d)
+![image](https://github.com/user-attachments/assets/9a5c5850-e216-436b-878c-9cc72817fca9)
 
    * Remove the Mask and etch off the Silicon Nitride that is not protected by photoresist.
    * Remove all the photoresist chemically.
 
-![image](https://github.com/user-attachments/assets/4921420e-b0af-458a-afb6-103eb8c8501b)
+![image](https://github.com/user-attachments/assets/3c0a6410-a99a-4635-8569-07c9a7f2c158)
 
    * Grow the Silicon di-oxide once more by placing it in an oxidation furnace. You will observe that the area under the silicon dioxide remains untouched. The area under the edges of the silicon di-oxide though, is not protected due to strong growth. This creates isolation areas between pockets. This proscess is known as LOCOS(Local oxidation of Silicon).
 
-![image](https://github.com/user-attachments/assets/f9e80655-be60-49d2-8f80-c2efd5b0f4e2)
+![image](https://github.com/user-attachments/assets/09c3f19b-329b-408d-b7bb-9376a3bd6c74)
 
-![image](https://github.com/user-attachments/assets/8044a472-e676-498c-a7f4-13103c4c84cf)
+![image](https://github.com/user-attachments/assets/086f7cf4-6d2d-477b-8048-8337fe6d63db)
 
    * The silicon Nitride is stripped using hot phosphoric acid.
 
-![image](https://github.com/user-attachments/assets/6d473439-e500-43f5-a29e-e535d858177a)
+![image](https://github.com/user-attachments/assets/795d783c-139f-43a8-8f56-651e7b5c5149)
 
 3) N-well and P-well formation:
 	* Photoresist is added again and a portion is protected by Mask 2.
 	* Mask 2 in layout.
 
-![image](https://github.com/user-attachments/assets/8e7f8738-dee1-4538-acbd-85747adc0f31)
+![image](https://github.com/user-attachments/assets/a85fda01-3afb-4827-b19f-4e169188b302)
 ‎ 
 	* It is again subjected to UV light and wahed. The mask is removed and then subjected to Boron in a process called ion-implantation to form a P-well.(High energy, about 200keV is needed). The oxide layer is damaged.
 	 
-![image](https://github.com/user-attachments/assets/30c86043-291d-4b8d-8813-936bb9a3b8b9)
+![image](https://github.com/user-attachments/assets/c0e5b3e2-0c86-44be-b14a-432592052e12)
 ‎
 	* The same step is done using Mask 3 to form a N-well except this time we replace bororn with phosphorus.
  
-![image](https://github.com/user-attachments/assets/d19c0e18-96c0-493e-8f51-4133c94830d7)
+![image](https://github.com/user-attachments/assets/b4e0984e-a73c-43cd-9be4-e3f279ca68a3)
 ‎
 	* We now have a N-well and a P-well.
  
-![image](https://github.com/user-attachments/assets/51a10612-958d-4ef0-a8a9-488a7bb49e8f)
+![image](https://github.com/user-attachments/assets/aaa8bd60-f975-4adf-9bc0-fd1dd8df1e79)
 ‎
 	* We then do drive-on diffusion and diffuse the wells to about half the substrates height by placing it in a high temprature furnace.(This is known as theh twin tub proscess)
  
-![image](https://github.com/user-attachments/assets/7874f69a-96ae-488f-b780-719215a143aa)
+![image](https://github.com/user-attachments/assets/3d76c7aa-404c-46df-a547-1736b75b87cb)
 
 4) Formation of gate: 
 	* The doping concentration and oxide capacitance impact the threshold voltage.
 	* We repeat the steps done with mask 2 again with mask 4.
 
-![image](https://github.com/user-attachments/assets/86e388c2-82a4-4415-8875-54fce77059dc)
+![image](https://github.com/user-attachments/assets/3e0046ae-ca90-45ae-aeef-8f1d6939cfd4)
 ‎
 	* We again put it under the effect of boron with leser energy to create a smaller P-well with doping concentration adjusted to meet requirements.
 
-![image](https://github.com/user-attachments/assets/b5daa49c-463c-4c8d-8bb1-0532053ebcc8)
+![image](https://github.com/user-attachments/assets/bd9bdafd-4c9d-414f-ba0a-bf9f6e46c392)
 ‎
  	* Same thing is one with mask 5, similar to the steps done with mask 3. This time, arsenic can be used in place of phosphorus. The oxide layer will be damaged.
 
-![image](https://github.com/user-attachments/assets/5bcd82b0-b922-4d5c-a1b2-e3b0e8bb3b73)
+![image](https://github.com/user-attachments/assets/d0b05ff9-9b06-418b-b050-bd3c7bbf4473)
 ‎
  	* The original damaged oxide is then etched/stripped using dilut hydrofluric (HF) solution.
 
-![image](https://github.com/user-attachments/assets/b22e5495-efad-431b-8af4-795322f4db53)
+![image](https://github.com/user-attachments/assets/19186b03-f06c-4f5e-89fd-eb1c2ca2b4c4)
 ‎
 	* Then, it is regrown to give high quality oxide. The oxide thickness (corresponding to oxide capacitance) is maintained as per required threshold voltage.
 
-![image](https://github.com/user-attachments/assets/1cbc77b1-6672-4352-9dbe-f125b6e1895d)
+![image](https://github.com/user-attachments/assets/f545a9bd-9994-4e9b-a872-d2107495dfb7)
 ‎
 	* After this, a polysilicon layer is deposited on the oxide layer. We then dope it with N-type ion implants for low gate resistance.
 
-![image](https://github.com/user-attachments/assets/c85a201d-857a-47b5-ad5c-6ea7a965d23e)
+![image](https://github.com/user-attachments/assets/a493d527-f9ac-4e24-a1e0-5cbc80b0550c)
 ‎
 	* Another photoresist layer is deposited and shaped as shown in figure with the help of mask 6 (polysilicon). Then mask 6 is removed followed by the photoresist. Also given below is how mask 6 looks in a loyout.
 
-![image](https://github.com/user-attachments/assets/6b8f5ff8-8b65-4c4e-a21d-5cb763f8938f)
+![image](https://github.com/user-attachments/assets/78927ccd-0a2c-4792-ba8f-b3f608237e08)
 
-![image](https://github.com/user-attachments/assets/3d539bc6-e56f-4053-96d4-6b4a7610e904)
+![image](https://github.com/user-attachments/assets/b7b1da0b-3e4f-4e85-83cf-ecd8a75c3bf3)
 	
-![image](https://github.com/user-attachments/assets/fdfc8448-0bd7-4cd4-9fa6-45f1447d3750)
+![image](https://github.com/user-attachments/assets/1ca5a125-359b-463a-8d0c-b921d6a74f97)
 	
 5) Lightly doped drain formation:
 	* This is done mainly for 2 reasons-
@@ -515,25 +516,27 @@ Delay(rise or fall): Out-In(at 50% w.r.t. time)
 
 	* Build a photoresist layer over the N-well using Mask 7. Then we implant phosphorus in our P-well to create a N- implant. The energy is also regulated to make sure the N-implant does  not penetrate deep into the well. Remove the photoresist.
 
-![image](https://github.com/user-attachments/assets/bea95150-8ee1-4b71-9fe9-58691aaf6336)
-‎
+![image](https://github.com/user-attachments/assets/a41f311f-7b37-4e38-b24e-5890360e22f1)
+
 	* Do the same thing on the other side using Boron and Mask 8 to create a P- implant.
 
-![image](https://github.com/user-attachments/assets/31460010-ec14-45c5-8972-cbd38b2ec84c)
-‎
+![image](https://github.com/user-attachments/assets/dc859621-2273-49ac-afb0-c1cac15837db)
+
 	* ***Side wall spacers:*** Deposit a thick layer of Silicon Nitride or Silicon di-oxide. Then perform anisotropic plasma etching. This remoed all the silicon di-oxide, oxide layer and nitride except for where the polysilicon is.
 
-![image](https://github.com/user-attachments/assets/95163ffb-b3c2-4fc4-90a2-8ca0a1655f31)
+![image](https://github.com/user-attachments/assets/fe3e99b0-04ea-4371-876a-ccc0b6a0001e)
 
-![image](https://github.com/user-attachments/assets/f617ea2c-1fb9-4b91-8f5f-ed1645a31963)
+![image](https://github.com/user-attachments/assets/eabf7c1c-9bf3-4e70-82ee-dc4a00532413)
 ‎
  	* The side wall spacers help in making sure that some of the N- and P- dopings are preserved.
  
 6) Source and drain formtion:
 	* We add a thin oxide layer to prevent ions from interfering with the P-substrate (chanelling).
 
-![image](https://github.com/user-attachments/assets/09828b58-90a5-4764-aab8-90036e061193)
+___________________________________________________________________________
+IMAGE
 
+________________________________
  * Steps done to create ligtly dope drains are repeated.
  * The N- and P- implants are still present thanks to the polysilicon and the side wall spacers.
 
