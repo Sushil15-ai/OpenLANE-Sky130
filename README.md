@@ -4,6 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/languages-verilog%2C_bash%2C_TCL-blue)
 
 > 2 Week digital VLSI SoC design and planning workshop with complete RTL2GDSII flow organised by VSD and NASSCOM
+![image](https://github.com/user-attachments/assets/19e505a6-89ae-471c-9f41-71b564b79899)
 
 <details>  
 
