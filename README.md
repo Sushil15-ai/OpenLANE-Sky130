@@ -533,16 +533,14 @@ Delay(rise or fall): Out-In(at 50% w.r.t. time)
 6) Source and drain formtion:
 	* We add a thin oxide layer to prevent ions from interfering with the P-substrate (chanelling).
 
-___________________________________________________________________________
-IMAGE
+![image](https://github.com/user-attachments/assets/269c2333-b864-4cc4-9dcf-dc8e99cfc89c)
 
-________________________________
  * Steps done to create ligtly dope drains are repeated.
  * The N- and P- implants are still present thanks to the polysilicon and the side wall spacers.
 
-![image](https://github.com/user-attachments/assets/573d6246-e5a5-4935-bea8-1283245f0c1e)
+![image](https://github.com/user-attachments/assets/e6973f1f-d9d6-4dc5-9d84-6c2a953b82a2)
 
-![image](https://github.com/user-attachments/assets/ad7eef9e-713f-4671-a495-7de5d6e81cd3)
+![image](https://github.com/user-attachments/assets/b608089c-79e8-47dc-a8d0-54b6903e4b03)
 
  * Annealing is done in high temprature. The implants will go deeper into the wells.
 
@@ -551,66 +549,66 @@ ________________________________
 	* Titanium (low resistance) is deposited on the wafer surface using *sputtering*.
 	* In *sputtering* titanium metal is bombarded with argon gas. The titanium atoms will get sputtered out and get deposited onto the substrate.
 
-![image](https://github.com/user-attachments/assets/9b56ee2a-164d-4eca-8da3-a9bdeaaf8237)
+![image](https://github.com/user-attachments/assets/2479e875-19fe-4645-b03d-afed9e3d47f0)
 ‎
  	* Wafer is heated at tempratures of 650-700°C in N<sub>2</sub> ambient for about 60s. This results in Titanium Silicon di-oxide(low resistant contacts)
 
-![image](https://github.com/user-attachments/assets/1759c36d-6b7d-48a9-a41e-336374c4296a)
+![image](https://github.com/user-attachments/assets/27e22e87-1d13-4ec7-b548-d1a24345adf9)
 ‎ 
 	* TiN is also formed due to nitrogen ambient. It is used only for local communication.
 	* Polysilicon placed with help of mask 11 as so. Mask is removed.
 
-![image](https://github.com/user-attachments/assets/b052ceb1-ea27-4461-8d03-20fcbd75527c)
+![image](https://github.com/user-attachments/assets/f5002e59-04f5-4dcc-8416-f3e7efd013ba)
 ‎
 	* Excess TiN is etched using RCA cleaning which consists of-
 
-![image](https://github.com/user-attachments/assets/830bba66-1c56-4a17-90ae-9bee8a107945)
+![image](https://github.com/user-attachments/assets/f8009e39-c85c-4617-b95f-f3e8e4f4c2bb)
 
-![image](https://github.com/user-attachments/assets/44c4df01-778e-44c5-89df-8bb6da3c5948)
+![image](https://github.com/user-attachments/assets/ebcf630a-b33c-4264-9b33-0485bd901635)
 
 8) Higher metal level formation:
 	* Now we deposit a thick layer of SiO<sub>2</sub> doped with phosphorus or boron. This is done to give a protection against mobile sodium ions(phosphorus). Doping with boron reduces temperature.
 
-![image](https://github.com/user-attachments/assets/58875442-8edc-44bb-ae75-6a9e0de9442b)
+![image](https://github.com/user-attachments/assets/90bd4ad4-f0f6-4ccf-8f7a-5f1364146278)
 ‎
 	* Chemical Mechanical Polishing(CMP) is done to flatten out wafer surface.
 
-![image](https://github.com/user-attachments/assets/9c5220d6-1464-4e43-8745-12d1c849e8bc)
+![image](https://github.com/user-attachments/assets/dbb05cde-60ba-4356-a295-0183c5b6a7f1)
 ‎
 	* Next we use mask 12 and photoresist on areas where we do not need contact holes. We also etch off the SiO<sub>2</sub> in places where we need the contact holes. We remove the photoresist.
 
-![image](https://github.com/user-attachments/assets/f98eb323-c235-4e28-89b1-f49d7d1a7e28)
+![image](https://github.com/user-attachments/assets/82dcbb8a-0863-4f62-93e7-77e0b2dc5637)
 ‎
 	* We then deposit a thin layer of Titanium Nitride.
 	* We then deposit a blanket tungsten layer on top of the TiN. It serves as a good interconnect between the bottom and top layers.
 
-![image](https://github.com/user-attachments/assets/cb96d804-ec61-4e52-a831-e6a09c01fa30)
+![image](https://github.com/user-attachments/assets/02359a99-db2f-4341-b6d7-ca8f9434dc52)
 ‎
 	* We again do CMP to remove excess Tungsten and planarise the wafer surface.
 	* Next we add an aluminium layer to take it to the top layer. We remove unnecesarry parts using mask 13 and photoresist as shown in diagram. Plasma etch out the remaining Al. Remove photoresist.
 
-![image](https://github.com/user-attachments/assets/30141880-0e05-4f24-92bc-b12190501a21)
+![image](https://github.com/user-attachments/assets/ec1443ad-f6af-423f-ae58-7955f27b5344)
 ‎
 	* We now already have 2 matal layers. To make another one, we deposit more Silicon di-oxide and perform CMP to make the surface planar.
 	* Using mask 14, define contact holes.
 
-![image](https://github.com/user-attachments/assets/9376c43f-57f9-4368-b5c8-3e3d1f23baca)
+![image](https://github.com/user-attachments/assets/7d41d948-fa02-43ea-8952-2d6d89622643)
 ‎
 	* Deposit a small layer of tin, and a layer of tungsten, before removing excess using CMP.
 
-![image](https://github.com/user-attachments/assets/417e9910-2bda-4b52-ae94-97a9687911a3)
+![image](https://github.com/user-attachments/assets/013ddf38-32ee-4c6d-aa2a-131b4de02439)
 ‎
 	* Using mask 15, make another deposit of Al interconnects over the tungsten as shown in diagram. This layers interconnects should be thicker than the ones on the prepious layer.
 
-![image](https://github.com/user-attachments/assets/563342f6-a0a2-40d7-9aa2-d4190c1ec85c)
+![image](https://github.com/user-attachments/assets/2bd51079-1375-4066-aed9-ba82c121bb31)
 ‎
 	* Deposit the top layer of dielectric (Silicon Nitride or Silicon dioxide) to protect the chip.
 
-![image](https://github.com/user-attachments/assets/f06a7420-af7c-466c-9dfa-0422ee80371f)
+![image](https://github.com/user-attachments/assets/4932d211-3282-4bf5-9bf2-330a05c4edbb)
 ‎	
 	* Finally use mask 16 to drill contat holes and bring contacts outside the chip.
 
-![image](https://github.com/user-attachments/assets/d5e617b5-bf70-4d07-8027-d29457b0f2b1)
+![image](https://github.com/user-attachments/assets/94dff425-11de-475a-9d13-7de4d78da520)
 
 
 ## Day 4 - Pre-layout timing analysis and importance of good clock tree
@@ -619,7 +617,7 @@ ________________________________
 
 * Logic gates can be used to regulate clock too.
 
-![image](https://github.com/user-attachments/assets/57f2833a-32d2-4eef-9c39-f24a218765ed)
+![image](https://github.com/user-attachments/assets/7d9fe2a5-17eb-4813-baf5-7ed37d10ba2c)
 
 </details>
 
@@ -650,17 +648,17 @@ prep -design picorv32a
 ```bash
 run_synthesis
 ```
-![image](https://github.com/user-attachments/assets/2f58c120-ae46-4009-8a59-a85f8e616fc7)
+![image](https://github.com/user-attachments/assets/874a00f9-85c9-4e44-8d39-1d44bd88af46)
 
-![image](https://github.com/user-attachments/assets/1652e4ff-3b96-4ba2-99fc-e993baa316b2)
+![image](https://github.com/user-attachments/assets/6b1396a1-016c-4d45-a4ea-ebe9d5fd7b52)
 
-![image](https://github.com/user-attachments/assets/53f57a33-5b1d-44ef-97a1-64aa3dea2dfe)
+![image](https://github.com/user-attachments/assets/2b138155-aa87-41d4-a8f2-20036667f654)
 
 2. Calculating Flop Ratio
 ```
 Flop Ratio = No. of D flip flops / No. of cells = 1613 / 14876 = 0.10842968539
 ```
-![image](https://github.com/user-attachments/assets/5402f41f-636d-48e9-aabe-75c9e7fb2655)
+![image](https://github.com/user-attachments/assets/890e8e00-ff6f-4550-9af8-a657e4e7dd49)
 
 ```
 % of D Flip Flops = Flop Ratio*100 = 0.10842968539 * 100 = 10.842968539%
@@ -680,11 +678,11 @@ less picorv32a.floorplan.def
 ```
 2. Calculate the die area in microns from the values in floorplan def.
 
-![image](https://github.com/user-attachments/assets/a1fcd5d0-6bbf-4b0f-b599-77f287edd878)
+![image](https://github.com/user-attachments/assets/8bcc2477-cded-435e-a1f2-18064bec439b)
 
-![image](https://github.com/user-attachments/assets/bf37a35f-db76-4600-9cbc-a4de94e0543b)
+![image](https://github.com/user-attachments/assets/8a6f804f-744b-4f9a-b12d-8a2745c0c74f)
 
-![image](https://github.com/user-attachments/assets/079157d1-d1f9-49e4-a914-66f3cbb0dac6)
+![image](https://github.com/user-attachments/assets/bc04d36e-6b8a-4369-bef9-1048c725f64a)
 
 ```
 Lower left coordinate or die: (0,0)
@@ -701,17 +699,17 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 # After this, perform the placement step.
 run_placement
 ```
-![image](https://github.com/user-attachments/assets/03e1155e-29d2-4677-bcbe-6f88e8980271)
+![image](https://github.com/user-attachments/assets/6b128393-9fcd-4359-880d-d44f9a764650)
 
-![image](https://github.com/user-attachments/assets/90f45ac7-8a77-4f72-9ed2-6bb9aadd6299)
+![image](https://github.com/user-attachments/assets/173590a2-68f5-45b5-99ab-b1d9847f79e1)
 
-![image](https://github.com/user-attachments/assets/4eee6ebc-24c1-4ed1-a495-03c00b5ea8dd)
+![image](https://github.com/user-attachments/assets/fcdbe37f-068e-415c-ab90-18f7e39b16c8)
 
-![image](https://github.com/user-attachments/assets/e6f40de7-5321-426d-a9ba-da8a94ffcc60)
+![image](https://github.com/user-attachments/assets/0bf5211f-ef1c-4392-a842-4358f059dd1a)
 
-![image](https://github.com/user-attachments/assets/14bf557a-6bed-4ade-b205-29eea86844d3)
+![image](https://github.com/user-attachments/assets/746f85f4-f83e-46cc-af03-f5782f261563)
 
-![image](https://github.com/user-attachments/assets/a7c48652-9cfd-479f-a504-f7ad1e941f12)
+![image](https://github.com/user-attachments/assets/93b4d29c-901c-4a89-8621-f3856192ed0f)
 ```bash
 # cd to path containing placement.def
 cd eDesktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/14-01_17-06/results/placement/
@@ -732,7 +730,7 @@ git clone https://github.com/nickson-jose/vsdstdcelldesign
 ```bash
 cd vsdstdcelldesign
 ```
-![image](https://github.com/user-attachments/assets/395c90f1-d744-480b-9498-493d7fe40506)
+![image](https://github.com/user-attachments/assets/0382aa51-46c6-4ad2-81df-e1eed0ee84ae)
 
 2. Copy the sky103A.tech file to /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/
 ```bash
@@ -742,25 +740,25 @@ cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/
 magic -T sky130A.tech sky130_inv.mag &
 ```
 
-![image](https://github.com/user-attachments/assets/ee2f43e0-f17c-4a70-9d41-d46ca3b12221)
+![image](https://github.com/user-attachments/assets/0aa4feb4-b91a-4cdc-9030-07f4b69d1b85)
 
 3. Load the custom inverter layout in magic and explore
 
 Opening inverter in magic
 
-![image](https://github.com/user-attachments/assets/774029c2-bc6d-4b3d-9c89-7e6cf6830768)
+![image](https://github.com/user-attachments/assets/1d85541c-2fc9-4eb5-a441-7e80c355d20f)
 
 Identifying PMOS
 
-![image](https://github.com/user-attachments/assets/c3e909cb-7418-4d9e-9c09-b42eec88ae1c)
+![image](https://github.com/user-attachments/assets/d1438810-7b1f-4d1d-bf57-05a81b58d435)
 
 Identifying NMOS
 
-![image](https://github.com/user-attachments/assets/49a47ff4-71d6-44c1-9fe0-2ca88898e05c)
+![image](https://github.com/user-attachments/assets/762ade6f-cc8a-4e90-b80b-9821c7ba6805)
 
 Output Y's connectipn to NMOS and PMOS verifies
 
-![image](https://github.com/user-attachments/assets/37fc7f81-c8a4-4f0e-a4e7-7aa23960351f)
+![image](https://github.com/user-attachments/assets/2c2e8abb-e36a-431a-9c14-023fc89b9fe6)
 
 4. Spice extraction of inverter in Magic
 ```bash
@@ -778,11 +776,11 @@ ext2spice cthresh 0 rthresh 0
 # convert extracted file to spice format
 ext2spice
 ```
-![image](https://github.com/user-attachments/assets/dbd03871-4ffb-4957-ab6e-551812abf258)
+![image](https://github.com/user-attachments/assets/4957f7ff-0a6f-403b-a017-25e22898f3ad)
 
 5. Editing the spice model file for analysis through simulation.
 
-![image](https://github.com/user-attachments/assets/f4a95d27-55e7-4847-9e57-c13aeb9edd8d)
+![image](https://github.com/user-attachments/assets/1d229b45-f02d-44ee-b003-50a20096738c)
 
 ### Section 3 - Sky130 Tech File Labs
 
@@ -834,19 +832,19 @@ run
 open file in vim using terminal
 vim sky130_inv.spice
 ```
-![image](https://github.com/user-attachments/assets/83917415-afc0-4956-bef8-a5ab91455b4d)
+![image](https://github.com/user-attachments/assets/fd9ae7be-8f4a-4b09-9efb-eda5d78e452e)
 
 ```bash
 # install ngspice
 sudo apt install ngspice
 ngspice sky130_1nv.spice
 ```
-![image](https://github.com/user-attachments/assets/0581c877-dd6c-440f-897c-89506d7d8f3f)
+![image](https://github.com/user-attachments/assets/8b8c0acd-c1e7-406e-bc52-f9c23062fa15)
 
 ```bash
 plot y vs time a
 ```
-![image](https://github.com/user-attachments/assets/9f326ae0-5e7d-4760-8341-4c81c0501c96)
+![image](https://github.com/user-attachments/assets/ee2396e3-d7da-4cce-8551-fd8e5387f25c)
 
 Rise transition time calculation
 ```
@@ -857,16 +855,16 @@ Rise transition time=Time taken for output to rise to 80%−Time teken for outpu
 ```
 20% screenshot
 
-![image](https://github.com/user-attachments/assets/bd95a1aa-ee4c-4574-b9da-7ca66ea61143)
+![image](https://github.com/user-attachments/assets/276bf143-4cc0-468c-9552-a87fd757ad1e)
 
 ```math
 80\%\ of\ output = 2.64\ V
 ```
 80% screenshot
 
-![image](https://github.com/user-attachments/assets/485d4c41-4207-4238-8709-8b5b33e9ebc7)
+![image](https://github.com/user-attachments/assets/b218d622-3b30-48ef-b930-53b95f2c3914)
 
-![image](https://github.com/user-attachments/assets/10ce95f1-2933-4d85-9d53-6a33be202944)
+![image](https://github.com/user-attachments/assets/82e47a7f-8b78-48ba-ab8b-b36945f1f327)
 
 ```math
 Rise\ transition\ time = 2.24179 - 2.18217 = 0.05962\ ns = 59.62\ ps
@@ -883,11 +881,11 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 ```
 20% screenshots
 
-![image](https://github.com/user-attachments/assets/ac8dc74a-5a1c-4e82-a808-81d7b9773e8e)
+![image](https://github.com/user-attachments/assets/74b85270-c030-4184-9b82-fa672d536fc2)
 
 80% screenshots
 
-![image](https://github.com/user-attachments/assets/68732488-46bc-43a4-ba4c-ac4d514af9d0)
+![image](https://github.com/user-attachments/assets/7757335e-1294-4a15-9463-d24906fc69e8)
 
 ```
 x0 = 4.09167e-09, y0 = 0.66
@@ -895,7 +893,7 @@ x0 = 4.09167e-09, y0 = 0.66
 x0 = 4.05075e-09, y0 = 2.64043
 ```
 
-![image](https://github.com/user-attachments/assets/6580edbb-ca6a-4183-b43e-fed1a87f04ba)
+![image](https://github.com/user-attachments/assets/94b247a1-044e-4d26-b235-eb49a422a218)
 
 ```math
 Fall\ transition\ time = 4.09167 - 4.05075 = 0.04092\ ns = 40.92\ ps
@@ -911,9 +909,9 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 ```
 50% screenshots
 
-![image](https://github.com/user-attachments/assets/1abea775-c041-4360-a13c-dc7f82c53668)
+![image](https://github.com/user-attachments/assets/a66ab6aa-a2d6-4ba7-8e6f-0206de6405d0)
 
-![image](https://github.com/user-attachments/assets/e2bcff5c-60da-4503-81c3-fad294fbd979)
+![image](https://github.com/user-attachments/assets/ed49b397-3eda-4988-a8fd-cebef3fba8ed)
 
 x0 = 2.15e-09, y0 = 1.65006
 
@@ -934,9 +932,9 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 
 50% Screenshots
 
-![image](https://github.com/user-attachments/assets/ba0bc505-07ed-4c46-9462-c20adad7e1cd)
+![image](https://github.com/user-attachments/assets/5f80b4e9-9c8c-45ab-81b9-5bee369b27e1)
 
-![image](https://github.com/user-attachments/assets/b134cb72-3d2b-4562-83d5-c5606c07615a)
+![image](https://github.com/user-attachments/assets/c6ea7bd9-5b75-4371-af9d-a823d5131a6d)
 
 x0 = 4.05e-09, y0 = 1.65019
 
@@ -968,46 +966,46 @@ magic -d XR &
 ```
 .magicrc file screenshot
 
-![image](https://github.com/user-attachments/assets/c0e678b8-4368-4ea5-86a7-fc021664193a)
+![image](https://github.com/user-attachments/assets/edf24ed9-9f0e-4194-bf55-8d3d0a6d6c4e)
 
 Screenshot opening metal layer 3
 
-![image](https://github.com/user-attachments/assets/4c42c18d-91b5-4539-a817-bcf8db0afc59)
+![image](https://github.com/user-attachments/assets/93daf94e-b5dc-4968-a1fd-6d2a5d30a526)
 
 Screenshot of difftap rules.
 
-![image](https://github.com/user-attachments/assets/77365844-9ac3-43c7-9a4a-781cd9143ff3)
+![image](https://github.com/user-attachments/assets/6c834417-4641-4073-918b-e17cccc26d1e)
 
 Identifying inaccuracy
 
-![image](https://github.com/user-attachments/assets/1161831d-db87-4147-916a-e74aa2796044)
+![image](https://github.com/user-attachments/assets/93ff18de-81c5-45bb-a1e2-d4b6ae46b6e6)
 
 Correction to sky130A.tech
 
-![image](https://github.com/user-attachments/assets/e76928cc-476e-4b2c-88fe-f2ce8a49dab6)
+![image](https://github.com/user-attachments/assets/483cde1f-bc1e-48ca-8f54-15b4f167bd67)
 
 The DRC error is now showing with respect to the new rule entered by us.
 
-![image](https://github.com/user-attachments/assets/854e8092-296a-441d-be83-b71e5fda9279)
+![image](https://github.com/user-attachments/assets/c1f05e4e-5165-4a92-99c9-51155f8f0eed)
 
 ### Nwell.4 Complex rule correction
 
 Identify the nwell withut the tap.
 
-![image](https://github.com/user-attachments/assets/cf31c6ae-5d8f-4ce4-ac13-ceb559f71503)
+![image](https://github.com/user-attachments/assets/f71efdce-c302-4ce6-92ca-b285ced8657b)
 
 Nwell rules page:
 
-![image](https://github.com/user-attachments/assets/0c3ce633-6ffd-42de-a9f8-c3c499724b13)
+![image](https://github.com/user-attachments/assets/094309a3-2742-4030-958e-81d8844a7d84)
 
 No drc error shown!
 
-Edit syy130A.tech file to update drc rules
-![image](https://github.com/user-attachments/assets/8e956683-67a5-41a5-97d7-2a1032bf95da)
+Edit sky130A.tech file to update drc rules
+![image](https://github.com/user-attachments/assets/505a66b4-1b77-4502-bba7-3d91dc016074)
 
 (illegal spelling changed)
 
-![image](https://github.com/user-attachments/assets/e4651710-46b7-455a-961d-b6f8456536b0)
+![image](https://github.com/user-attachments/assets/672cc72c-5233-4bb1-accc-408cfce9d1ba)
 
 ```bash
 # Load updated .tech file
@@ -1023,7 +1021,7 @@ drc why
 
 DRC error shown
 
-![image](https://github.com/user-attachments/assets/667decbc-e03d-430b-8a72-c182d5c50abd)
+![image](https://github.com/user-attachments/assets/c4e251ef-c39d-45cb-b81d-8ae520a19cfc)
  
 #### LAB tasks:-
 
@@ -1041,7 +1039,7 @@ Condition 3: Height of the standard cell should be even multiples of the vertica
 
 Screenshot of tracks.infoof sky130_fd_sc_hd
 
-![image](https://github.com/user-attachments/assets/d41bb4b3-a82a-4a9d-9afd-d4acefe53b3a)
+![image](https://github.com/user-attachments/assets/926e41cd-f1d4-4896-91cc-0a7790dc55e7)
 
 ```bash
 # To understand the syntax
@@ -1053,9 +1051,9 @@ grid 0.46um 0.34um 0.23um 0.17um
 ```
 Grid
 
-![image](https://github.com/user-attachments/assets/34e6762f-7582-4ad2-880c-3dd6471067cb)
+![image](https://github.com/user-attachments/assets/0cf2de43-b4cb-4eca-8428-338161612e37)
 
-![image](https://github.com/user-attachments/assets/36b52c24-fb1b-444a-9542-60b7917cefde)
+![image](https://github.com/user-attachments/assets/b08fa1a9-149d-41b9-9906-413b3f14dd84)
 
 *Conditions Verified*
 
@@ -1079,11 +1077,11 @@ Open the newly saved layout using
 magic -T sky130A.tech sky130_vsdinv.mag &
 ```
 
-![image](https://github.com/user-attachments/assets/d56daaa4-4f0d-45a2-8238-11adfa40548b)
+![image](https://github.com/user-attachments/assets/63e76f6c-18ae-43b4-822a-ac91897962ba)
 
 2. Generate lef from the layout.
 
-![image](https://github.com/user-attachments/assets/f76d941a-c8ce-4916-b543-2a2e781de94b)
+![image](https://github.com/user-attachments/assets/92c2b43c-b96d-47c4-9bba-54a101199d4f)
 
 ```bash
 lef write
@@ -1101,19 +1099,19 @@ cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/de
 ```bash
 ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ```
-![image](https://github.com/user-attachments/assets/3d32e417-146c-42b8-b7b1-33dab0bfa48b)
+![image](https://github.com/user-attachments/assets/e844d6ca-db15-410a-87fd-543ab76d86c5)
 
 Open picorv32A/config.tcl with GVIM
 
-![image](https://github.com/user-attachments/assets/6bf0b561-04ab-4bf0-aa75-79b1f6111c60)
+![image](https://github.com/user-attachments/assets/0a8cbb61-b51c-4c09-a2d7-919d477e3e35)
 
-Edit config.tcl to this
+Edit config.tcl to this (This step will be easier if you do it with notepad instead of terminal)
 
-![image](https://github.com/user-attachments/assets/4840e18f-f0b6-4501-8656-4fa94e1a8c92)
+![image](https://github.com/user-attachments/assets/bb47954f-0936-4464-9e00-e8be3b5f6a3c)
 
 Now perform steps to open OPENLane and prep picorv32a.
 
-![image](https://github.com/user-attachments/assets/927c7b63-6d8d-41fb-b07e-407bb9ea6d4f)
+![image](https://github.com/user-attachments/assets/8c47d657-fc3c-4262-a739-eae5d7b66726)
 
 Include newly added lef to flow using
 ```bash
@@ -1122,19 +1120,19 @@ add_lefs -src $lefs
 ```
 Run synthesis
 
-![image](https://github.com/user-attachments/assets/d2f57daf-8182-426b-9b80-0459b10a506e)
+![image](https://github.com/user-attachments/assets/78188cb4-6ef8-4d8d-ba3f-38a6bbc4d739)
 
-![image](https://github.com/user-attachments/assets/ef9318fa-55cb-4720-a205-c4d26c37c9fc)
+![image](https://github.com/user-attachments/assets/aa53b025-5ffb-4976-a8f9-6a92dde83098)
 
 Perform these modifications
 
-![image](https://github.com/user-attachments/assets/89eafcfa-592e-445b-92bf-911e120a27b2)
+![image](https://github.com/user-attachments/assets/2e5d3bcc-631b-4520-a07e-e9c6d1435e99)
 
 Run synthesis
 
 Negative slack becomes 0
 
-![image](https://github.com/user-attachments/assets/e59d9bf0-f0f6-4044-9ac0-36ce689c95b0)
+![image](https://github.com/user-attachments/assets/2ea9d87c-7f73-407a-8e0c-3dbdd4e30ae0)
 
 ```bash
 run_floorplan
@@ -1146,11 +1144,11 @@ init_floorplan
 place_io
 tap_decap_or
 ```
-![image](https://github.com/user-attachments/assets/42aec05f-e216-4232-9cb5-f5b43155e373)
+![image](https://github.com/user-attachments/assets/85519be6-574e-4219-b0a9-825a3fccf83d)
 
 Next we run placement
 
-![image](https://github.com/user-attachments/assets/8e8f69df-a633-455a-83fc-6668856be0db)
+![image](https://github.com/user-attachments/assets/59ca231d-3ade-4313-bfc7-d1b70c44166b)
 
 Open placements results using
 ```bash
@@ -1159,32 +1157,32 @@ cd /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
-![image](https://github.com/user-attachments/assets/82294020-ee0f-4252-8246-6d6fd94ef44f)
+![image](https://github.com/user-attachments/assets/9d60b463-7c65-4b02-8069-a22ceef87046)
 
-![image](https://github.com/user-attachments/assets/b57d71a5-df69-4829-92a0-72bc20a14c00)
+![image](https://github.com/user-attachments/assets/7957c209-a4a0-4add-86b0-0735c219a364)
 
-![image](https://github.com/user-attachments/assets/4e918dad-bce2-4124-96fd-0ef91d76a6ba)
+![image](https://github.com/user-attachments/assets/f41d34dd-7bd9-4256-8700-27dba91001de)
 
 Expand to view internal activity of layers
 
-![image](https://github.com/user-attachments/assets/18aae716-f813-47e4-998b-32ffe02e22cf)
+![image](https://github.com/user-attachments/assets/55ca54a8-7eaf-4775-a36f-daab7439b339)
 
 #### Post synthesis STA with OpenSTA.
  1) Run all steps untill synthesis again.
  2) Create pre_sta.conf in openlane dir and my_base.sdc in openlane/designs/picorv32a/src.
  
- ![Taken from https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main](https://github.com/user-attachments/assets/5ea6e341-cc89-437e-a16b-abb395c44422)
+ ![Taken from https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/tree/main]![image](https://github.com/user-attachments/assets/552ca5db-a571-4085-9c5c-088b4d261f40)
 
- ![image](https://github.com/user-attachments/assets/ded68e6f-f07f-4d99-9742-42c53a536669)
+![image](https://github.com/user-attachments/assets/5346df71-2e30-48d4-a9fd-cf9cc63a4bb5)
  
- ![image](https://github.com/user-attachments/assets/74e303e8-f2f3-4c8f-90ac-e8488f916680)
+![image](https://github.com/user-attachments/assets/54d772b9-f7a3-4f1b-ae32-4e9b680ac92d)
 
 ```bash
 cd Desktop/work/tools/openlane_working_dir/openlane
 
 sta pre_sta.conf
 ```
-![image](https://github.com/user-attachments/assets/12e8551c-0b55-4238-b0f2-8b5f5ce17cdd)
+![image](https://github.com/user-attachments/assets/27e6a695-9a0d-4f67-891c-830aeac05b26)
 
  4) Commands to reduce fanout and reduce delay.
 ```bash
@@ -1208,7 +1206,7 @@ echo $::env(SYNTH_DRIVING_CELL)
 ```bash
 run_synthesis
 ```
-![image](https://github.com/user-attachments/assets/aad6f5a5-b5a7-4711-b0db-a4239b5d3fd1)
+![image](https://github.com/user-attachments/assets/18efa115-acee-4bdb-b247-c8ad837c7930)
 
 Open the STA file and run it
 ```bash
@@ -1216,7 +1214,7 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 
 sta pre_sta.conf
 ```
-![image](https://github.com/user-attachments/assets/fbfad683-57bc-4569-9c22-0f9e642f55f8)
+![image](https://github.com/user-attachments/assets/1df58c4e-ab45-43bc-a65f-b2dea89b8fe5)
 
 5) Make timing ECO fixes to remove all violations.
 
@@ -1233,7 +1231,7 @@ cp picorv32a.synthesis.v picorv32a.synthesis_old.v
 
 ls
 ```
-![image](https://github.com/user-attachments/assets/ba46efae-7c7a-40f9-b0ae-6f5d75852ea9)
+![image](https://github.com/user-attachments/assets/24c02130-da8f-4c9e-b688-e8ae4147592a)
 
 Commands to write verilog
 
@@ -1246,7 +1244,7 @@ write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/des
 ```bash
 exit
 ```
-![image](https://github.com/user-attachments/assets/f1807441-4c35-4146-a181-5b9c2e69e5b4)
+![image](https://github.com/user-attachments/assets/feaad044-d490-419d-95dd-52986db6f349)
 
 Commands load the design and run necessary stages
 
@@ -1287,7 +1285,7 @@ Runnning command to synthesis the clock tree.
 ```bash
 run_cts
 ```
-![image](https://github.com/user-attachments/assets/41d0d81b-9bc6-460b-a582-a25dd35b8c14)
+![image](https://github.com/user-attachments/assets/52f6f240-94b2-4f22-81b7-ac18ea98d5c5)
 
 ```bash
 # run OpenROAD
@@ -1305,13 +1303,13 @@ read_def /openLANE_flow/designs/picorv32a/runs/21-01_16-03/results/cts/picorv32a
 # Create OpenROAD database
 write_db pico_cts.db
 ```
-![image](https://github.com/user-attachments/assets/a049a01d-e444-4367-9542-f2b237029317)
+![image](https://github.com/user-attachments/assets/f8612236-d9a1-48b8-8e3e-79a686ab0b92)
 
 ```bash
 # Loading the created database
 read_db pico_cts.db
 ```
-![image](https://github.com/user-attachments/assets/140d2889-fd99-407a-99bd-fcf955727aa5)
+![image](https://github.com/user-attachments/assets/9d7a2345-ea11-49c4-ac38-22cfb4f709f5)
 
 ```bash
 # Read netlistS
@@ -1328,7 +1326,7 @@ link_design picorv32a
 # Read the custom sdc
 read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
 ```
-![image](https://github.com/user-attachments/assets/2321ca77-3053-4a3d-aa64-814897ccff96)
+![image](https://github.com/user-attachments/assets/f040917c-b816-40a4-9de8-c307942fd35b)
 
 ```bash
 # Set all cloks as propagated clocks
@@ -1341,7 +1339,7 @@ help report_checks
 # Generating timing report
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
 ```
-![image](https://github.com/user-attachments/assets/e1ab81c7-768a-4f7b-b813-4e900f1d0d1c)
+![image](https://github.com/user-attachments/assets/f3720244-848a-4225-af75-24690a48d57f)
 
 ```bash
 exit
@@ -1367,15 +1365,15 @@ echo $::env(CURRENT_DEF)
 ```bash
 set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/placement/picorv32a.placement.def
 ```
-![image](https://github.com/user-attachments/assets/2239e209-25f5-483a-b626-d82da84adcdf)
-
+___________________________________________________________________________________
+IMAGE
+___________________________________________________________________________________
 ```bash
 run_cts
 ```
 ```bash
 echo $::env(CTS_CLK_BUFFER_LIST)
 ```
-![image](https://github.com/user-attachments/assets/bcb37aeb-7527-437d-86a2-5643b7897451)
 
 ```bash
 openroad
