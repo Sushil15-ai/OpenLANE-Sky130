@@ -272,6 +272,26 @@ Theory
 #### LAB tasks:-
 1. Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 ```bash
+cd Desktop/work/tools/openlane_working_dir/openlane
+```
+```bash
+docker
+```
+```bash 
+./flow.tcl -interactive
+# The -interactive flag opens flow.tcl in interactive mode
+```
+```bash
+package require openlane 0.9
+```
+```bash
+prep -design picorv32a
+# This command makes sure that future commands follow the design specifications as set in picorv32a
+```
+```bash
+run_synthesis
+```
+```bash
 run_placement
 ```
 ![image](https://github.com/user-attachments/assets/f754d6f7-1f14-4ece-a006-a056bde8d73d)
@@ -1365,9 +1385,8 @@ echo $::env(CURRENT_DEF)
 ```bash
 set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/placement/picorv32a.placement.def
 ```
-___________________________________________________________________________________
-IMAGE
-___________________________________________________________________________________
+![image](https://github.com/user-attachments/assets/47827857-f388-4f26-97a6-5888a2a02cbd)
+
 ```bash
 run_cts
 ```
@@ -1384,7 +1403,7 @@ read_lef /openLANE_flow/designs/picorv32a/runs/21-01_15-14/tmp/merged.lef
 ```bash
 read_def /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/cts/picorv32a.cts.def
 ```
-![image](https://github.com/user-attachments/assets/0acca5fa-95bd-45e4-a503-815b70313372)
+![image](https://github.com/user-attachments/assets/b66a24e1-0c3d-4f6a-90bb-b8c3d5ffbc0b)
 
 ```bash
 write_db pico_cts1.db
@@ -1395,7 +1414,7 @@ read_db pico_cts.db
 ```bash
 read_verilog /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/synthesis/picorv32a.synthesis_cts.v
 ```
-![image](https://github.com/user-attachments/assets/11f6059b-a46c-4a4c-87eb-5b0281a29545)
+![image](https://github.com/user-attachments/assets/6b49559c-4b0b-4b03-a94b-65b1583ba844)
 
 ```bash
 read_liberty $::env(LIB_SYNTH_COMPLETE)
@@ -1407,7 +1426,7 @@ Read the .sdc file we created
 ```bash
 read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
 ```
-![image](https://github.com/user-attachments/assets/1f6cef54-af12-474f-8e99-9888277b2c74)
+![image](https://github.com/user-attachments/assets/d71c4590-76e3-4260-a333-cce9540a2f64)
 
 ```bash
 set_propagated_clock [all_clocks]
@@ -1415,7 +1434,7 @@ set_propagated_clock [all_clocks]
 ```bash
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
 ```
-![image](https://github.com/user-attachments/assets/da1ced87-689e-48d4-9c43-f70eb6e941ed)
+![image](https://github.com/user-attachments/assets/c8fe5e35-8e54-46f1-a826-2df319334320)
 
 ```bash
 report_clock_skew -hold
@@ -1423,7 +1442,7 @@ report_clock_skew -hold
 ```bash
 report_clock_skew -setup
 ```
-![image](https://github.com/user-attachments/assets/f1a18c34-b690-431c-ba7f-d8e4087fd891)
+![image](https://github.com/user-attachments/assets/9a7385a0-fcf8-428c-bf5a-db9de3d13410)
 
 ```bash
 exit
@@ -1438,7 +1457,7 @@ set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_
 ```bash
 echo $::env(CTS_CLK_BUFFER_LIST)
 ```
-![image](https://github.com/user-attachments/assets/8145e430-876d-4f19-ba56-c15b726221ed)
+![image](https://github.com/user-attachments/assets/6a71a3e0-72ca-448c-a379-c3cafa87bf22)
 
 #### LAB Tasks:-
 
@@ -1461,7 +1480,7 @@ package require openlane 0.9
 ```bash
 prep -design picorv32a
 ```
-![image](https://github.com/user-attachments/assets/8fcf3ddf-b308-41cf-b290-bfa869b74b4c)
+![image](https://github.com/user-attachments/assets/7d421419-3558-4dd0-a580-59c90fc6f65a)
 
 ```bash
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -1473,12 +1492,12 @@ set ::env(SYNTH_STRATEGY) "DELAY 3"
 ```bash
 set ::env(SYNTH_SIZING) 1
 ```
-![image](https://github.com/user-attachments/assets/9050f15e-b8f7-4b50-a0df-6dcef1caa0b5)
+![image](https://github.com/user-attachments/assets/a818c691-1b8b-4ad9-a4e5-447967d7f6f1)
 
 ```bash
 run_synthesis
 ```
-![image](https://github.com/user-attachments/assets/657df435-e4a9-4c59-be3d-cee1a21bdf61)
+![image](https://github.com/user-attachments/assets/a65d2357-a50d-437e-a0dd-313580d30790)
 
 Alternative for running floorplan
 ```bash
@@ -1486,13 +1505,13 @@ init_floorplan
 place_io
 tap_decap_or
 ```
-![image](https://github.com/user-attachments/assets/5c4d7677-93fa-4c45-bda9-ed721269e034)
+![image](https://github.com/user-attachments/assets/a77c8c90-61a9-490f-a8ef-6fe47685e3d1)
 
 Running placement
 ```bash
 run_placement
 ```
-![image](https://github.com/user-attachments/assets/bdb63914-cb40-43a1-84e0-d29209365349)
+![image](https://github.com/user-attachments/assets/924b4ef7-1132-4f8c-89e0-c18c2d597fe4)
 
 ```bash
 unset ::env(LIB_CTS)
@@ -1501,13 +1520,13 @@ Running Clock Tree Synthesis (CTS)
 ```bash
 run_cts
 ```
-![image](https://github.com/user-attachments/assets/007124db-11ed-4fb0-830d-0bdb47f72e9d)
+![image](https://github.com/user-attachments/assets/00632efe-e8f3-4a60-b652-98f840f84ff7)
 
 Generate the PDN
 ```bash
 gen_pdn 
 ```
-![image](https://github.com/user-attachments/assets/3f796954-9d6a-47dc-bb43-abb2fc613692)
+![image](https://github.com/user-attachments/assets/febb1b6c-392d-45a9-a5ca-2659ee02bb84)
 
 Commands to load PDN def in magic in another terminal
 
@@ -1519,9 +1538,9 @@ Open in magic
 ```bash
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 ```
-![image](https://github.com/user-attachments/assets/0d789788-76d2-4fc3-a477-deac972c1428)
+![image](https://github.com/user-attachments/assets/4b1e2fee-907a-449d-9a02-e0f352ceb041)
 
-![image](https://github.com/user-attachments/assets/b6e01c8e-da2d-458e-92f3-42b1832db9f7)
+![image](https://github.com/user-attachments/assets/0d7bb155-6633-4c2d-897c-333cffdd7781)
 
 
 2) Perfrom detailed routing using TritonRoute and explore the routed layout.
@@ -1538,11 +1557,9 @@ echo $::env(ROUTING_STRATEGY)
 # Command for detailed route using TritonRoute
 run_routing
 ```
-![image](https://github.com/user-attachments/assets/14ea1fc0-b044-4096-bef1-dd278122079a)
+![image](https://github.com/user-attachments/assets/7302a471-0274-4d20-bc13-ff9b02a1446a)
 
-![image](https://github.com/user-attachments/assets/8f7be911-3f03-4cfb-9cf1-7b5e30a403c9)
-
-
+![image](https://github.com/user-attachments/assets/23d58ea2-dad1-4504-944d-0d794695e6d0)
 
 *Commands to load routed def in magic in another terminal*
 
@@ -1555,9 +1572,9 @@ Open in magic.
 ```bash
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
 ```
-![image](https://github.com/user-attachments/assets/147b504f-4fd9-4d9f-a1b7-c4fd16368267)
+![image](https://github.com/user-attachments/assets/ed9f0259-8f60-4ff0-b79d-44e04200cf01)
 
-![image](https://github.com/user-attachments/assets/e7d77a7e-d063-445a-8858-4750f80c8d79)
+![image](https://github.com/user-attachments/assets/2f5f214c-39fd-465a-b445-422618a214dd)
 
 
 3) Post-Route parasitic extraction using SPEF extractor.
@@ -1585,13 +1602,13 @@ Read the .lef file we have created.
 ```bash
 read_lef /openLANE_flow/designs/picorv32a/runs/21-01_15-14/tmp/merged.lef
 ```
-![image](https://github.com/user-attachments/assets/94d7b9f2-8da3-4a37-a2a4-a50c35d11402)
+![image](https://github.com/user-attachments/assets/3f0a8003-2e65-47dc-a77e-588ee7be1640)
 
 read the .def file we have created.
 ```bash
 read_def /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/routing/picorv32a.def
 ```
-![image](https://github.com/user-attachments/assets/9d46d462-f187-40dd-a2c7-361121d51714)
+![image](https://github.com/user-attachments/assets/7fccc71b-e8f7-4ed6-aa01-1f266ed0007a)
 
 ```bash
 write_db pico_route.db
@@ -1609,12 +1626,12 @@ read_liberty $::env(LIB_SYNTH_COMPLETE)
 ```bash
 link_design picorv32a
 ```
-![image](https://github.com/user-attachments/assets/0ddf1360-a184-4b82-a59d-cdfda83c7df4)
+![image](https://github.com/user-attachments/assets/b24542d6-77a0-4315-9f8b-6963a18634a1)
 
 ```bash
 read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
 ```
-![image](https://github.com/user-attachments/assets/434c24de-6542-44a2-b341-ff17cc34c69c)
+![image](https://github.com/user-attachments/assets/5f525373-71af-4f7f-8108-b0672aff4707)
 
 ```bash
 set_propagated_clock [all_clocks]
@@ -1623,18 +1640,18 @@ Read the spef file we just extracted(not nescessary in new openlane)
 ```bash
 read_spef /openLANE_flow/designs/picorv32a/runs/21-01_15-14/results/routing/picorv32a.spef
 ```
-![image](https://github.com/user-attachments/assets/8023e356-da48-4a4b-abc8-34ef867e4799)
+![image](https://github.com/user-attachments/assets/3136e686-5ee2-4268-9d17-d33321c22939)
 
 ```bash
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
 ```
-![image](https://github.com/user-attachments/assets/46d0eade-3990-45ed-96cf-5d4c46ae107c)
+![image](https://github.com/user-attachments/assets/feda064d-96d5-4bd0-b376-99414d8b57ec)
 
 Exit the openlane flow.
 ```bash
 exit
 ```
-![image](https://github.com/user-attachments/assets/5aaa9402-afc1-45e1-9f03-6f2dbff93ef7)
+![image](https://github.com/user-attachments/assets/814cc98a-6ec0-490e-9950-131dbe1ec4f4)
 
 # Acknowledgements
 
